@@ -1,0 +1,11 @@
+{
+  "name": "find-sign-vectors-builder",
+  "version": "1.0.0",
+  "description": "Builds Word Vector library for find-sign-website to consume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phoenix Fox",
+  "license": "Unlicense"
+}
