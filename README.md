@@ -21,3 +21,9 @@ The LPS files are a length prefix stream. That is, they are buffers prefixed wit
 1. A utf-8 string normalized word `normalizedWord`.
 2. a 32bit big endian float `scale`
 3. a buffer which is `vectorSize` many bytes long. Each byte is a value between 0 and 255 unsigned, which maps to `-1.0` to `+1.0` multiplied by `scale`
+
+## So what's the point of this?
+
+If you wanted to setup a find-sign instance which deals in a non-english language, this tool would be a great starting point. Facebook Research has already published 157 [compatible datasets](https://fasttext.cc/docs/en/crawl-vectors.html). Convert one of these languages, stick it on a static http server somewhere, and you're one step closer to having Find Sign working.
+
+You can find the cc.en.300 dataset converted in to this format at [data.auslan.fyi](https://data.auslan.fyi/collections/wordvec) as used by find-sign-website.
